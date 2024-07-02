@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version> 1.5.9.RELEASE </version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>CT</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CT</name>
+	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<!--<tomcat.version>7.0.59</tomcat.version> 改变内置Tomcat版本6.0.53,7.0.59 ,默认10+-->
+		<!--<jackson.version>2.6.7</jackson.version>-->
+
+		<start-class>com.example.demo.CtApplication</start-class>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<!-- 添加scheduled坐标 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+
+		<!--定时任务quartz
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-quartz</artifactId>
+		</dependency>
+		-->
+		<!-- 热启动热部署依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!--rCaller依赖 -->
+		<!-- https://mvnrepository.com/artifact/com.github.jbytecode/RCaller   rcaller依赖配置 -->
+		<dependency>
+			<groupId>com.github.jbytecode</groupId>
+			<artifactId>RCaller</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<!-- Renjin:Renjin配置    -->
+		<!-- https://mvnrepository.com/artifact/org.renjin/renjin-script-engine -->
+		<dependency>
+			<groupId>org.renjin</groupId>
+			<artifactId>renjin-script-engine</artifactId>
+			<version>3.5-beta72</version>
+		</dependency>
+		<dependency>
+			<groupId>org.rosuda.REngine</groupId>
+			<artifactId>Rserve</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+
+		<!-- 数据库连接依赖配置  高版本springboot使用                    -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
+		</dependency>
+
+		<!-- 启动依赖    -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<!--  移除内置Tomcat(只要需要打包成war发布到外部Tomcat都需要配置 -->
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-tomcat</artifactId>
+					</exclusion>
+				</exclusions>
+
+			</dependency>
+
+
+		<!--   servelet容器依赖 //provided既只用于开发和测试阶段  -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!--   tomcat JSP依赖
+		<dependency> <groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper</artifactId>
+			<version>6.0.0+</version>
+		</dependency>
+ 		 -->
+
+		<!--     更改内置Tomcat版本，和属性里直接指定tomcat版本任意一种都行     -->
+		<!--
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>8.5.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-el</artifactId>
+			<version>8.5.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-websocket</artifactId>
+			<version>8.5.32</version>
+		</dependency>
+
+		-->
+		<!--
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-api</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-juli</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
+		-->
+		<!--内嵌tomcat对jsp支持
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+ 		-->
+
+		<!-- 数据库连接依赖配置
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		    -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	<!-- jstl标签引用
+        <dependency>
+             <groupId>javax.servlet</groupId>
+             <artifactId>jstl</artifactId>
+             <version>1.0.1</version>
+        </dependency>
+         <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+            <version>3.1.0</version>
+        </dependency>
+-->
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<!--xlsx-->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<!--	低版本Tomcat部署spirngbootboot项目所必须，使容器servlet2.5能够兼容springboot的servlet3.0 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-legacy</artifactId>
+			<version>1.0.2.RELEASE</version>
+		</dependency>
+
+		<!-- multipartResolver 解析器依赖  -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+        <!-- springboot项目默认servlet为3.0，这里指定servlet为2.5			<scope>provided</scope>
+		<dependency>
+	       <groupId>javax.servlet</groupId>
+		   <artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		-->
+		<!--
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>5.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+    	-->
+
+			<!-- 邮件发送依赖  -->
+			<dependency>
+				<groupId>javax.mail</groupId>
+				<artifactId>javax.mail-api</artifactId>
+				<version>1.6.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>javax.mail</artifactId>
+				<version>1.6.2</version>
+			</dependency>
+			<!-- json数据打包依赖  -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+			</dependency>
+        </dependencies>
+
+         <build>
+             <!-- 打包后的war文件名称  -->
+		<finalName>CTDvic</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+				</configuration>
+            </plugin>
+			<!--  不能正确访问jsp尝试，注释掉pom中的jsp配置，使用Tomcat配置
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://127.0.0.1:8082</url>
+					<server>tomcat</server>
+					<path>/</path>
+					<contextReloadable>true</contextReloadable>
+				</configuration>
+			</plugin>
+-->
+		</plugins>
+
+     </build>
+</project>

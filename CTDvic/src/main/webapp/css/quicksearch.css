@@ -1,0 +1,57 @@
+
+/* 查看quik search结果  */
+.view_detail{
+    margin-top: 12px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.view_detail:hover{
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.view_detail:active{
+    transform: translateY(-1px);
+}
+.qs-conall{
+    border: solid 1px #61b661;
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.qs-cont{
+    border-right: solid 1px #61b661;
+}
+.qs-cont,.qs-cont-right{
+    height: 200px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    margin: auto;
+}
+.tip,.highlight-que{
+    display: inline-flex;
+}
+.qs-cont img,.qs-cont-right img{
+    margin-top:20px;
+    position: relative;
+    left:30px;
+}
+.qs-conall h3{
+    font-size: 2rem;
+}
+.qs-count-de{
+    position: relative;
+    top:20px
+}

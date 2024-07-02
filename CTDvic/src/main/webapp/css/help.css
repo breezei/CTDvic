@@ -1,0 +1,56 @@
+.box{
+    width: 90%;;
+    margin: 0 5% 0 5%;
+}
+.panel-heading{
+    background-color: #78b4a6 !important;
+}
+#myScrollspy ul{
+    overflow-y: auto;
+    height: 500px;
+}
+#myScrollspy nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+#myScrollspy .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    text-align: left;
+}
+.panel-body img{
+    width: 100%;
+    display: block;
+}
+#myhelpcont .collapse{
+    width: 100%;
+}
+#content .panel-body p{
+    font-size: 1.7rem;
+    display: block;
+    text-align: left;
+    color: #57595d;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4px;
+}
+#content .panel-body .bottom_link{
+    text-align: center;
+}
+#content .panel-body p.main_p{
+    font-weight:bold;
+    hyphens:auto;
+    width: 95%;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+}
+#content .panel-body a{
+    color: #499349;
+}
+p{
+    text-align:justify; text-justify:inter-ideograph;
+}

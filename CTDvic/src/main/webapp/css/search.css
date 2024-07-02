@@ -1,0 +1,326 @@
+
+/*  多选表  */
+/*  文本框 */
+.inside{
+    height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+    border:2px solid #f1f3f4;
+}
+
+.search_title{
+    width: 100%;
+    height: 35px;
+    background-color: #78b4a6;
+}
+
+.match_icon{
+    width: 26px !important;
+}
+
+.search_title img{
+    height: 25px;
+    width: 22px;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+.part_search{
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px rgba(140, 140, 140, 0.5);
+}
+
+input[type=checkbox] {
+    zoom: 130%;
+ }
+ li{
+    list-style: none;
+}
+ #content li:not(#mu_t li){
+     padding-top: 5px;
+ }
+
+
+/*  复选框样式   */
+.checkbox-wrapper-31:hover .check {
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox-wrapper-31 {
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+  }
+  
+  .checkbox-wrapper-31 .background {
+    fill: #d8f3dc;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 .check {
+    display: inline-block;
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .checkbox-wrapper-31 input[type=checkbox]:hover {
+    cursor: pointer;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .background {
+    fill: #6cbe45;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+  }
+  
+  .checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+  }
+/* check 字体样式
+.check_label{
+ font-family: 'Quattrocento', serif;
+ font-size: 20;
+ font-weight: 700;
+}
+*/
+/*  表单字体背景等     */
+
+#search span:not(button span){
+    position: relative;
+    top: -3px;
+}
+
+
+
+
+
+/*   输入框样式   */
+  .input-container {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+  }
+
+  .md_input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    width: 100%;
+    outline: none;
+  }
+
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #52b788 0%, #ff9f1c 46%, #52b788 100%);
+    transition: width 0.3s;
+  }
+
+  .md_input[type="text"]:focus + .underline {
+    width: 100%;
+  }
+ 
+    select{
+    display: block;
+    border-color: #565756;
+    border-style: solid;
+    border-width: 1.5px;
+}
+/*    去除浏览器原生select选中的加粗边框     */
+select:focus-visible {
+    /* outline: -webkit-focus-ring-color auto 1px; 这是谷歌浏览器的原生样式*/
+    outline: none;
+}
+
+/*  button 样式 */
+button {
+    font-size: 17px;
+    padding: 1em 2.7em;
+    background: #036666;
+    background: linear-gradient(90deg, #358f80 0%, #99e2b4 100%);
+    color: #000;
+    font-weight: 900;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    box-shadow: 0 0 10px #7f7f7f;
+    transition: 0.2s;
+}
+
+.label {
+    position: relative;
+    top: -1px;
+}
+
+.transition {
+    transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+    transition-duration: 400ms;
+    background: #036666;
+    border-radius: 9999px;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+    width: 0;
+    height: 0;
+}
+
+button:hover {
+    transition: 0.2s;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.table_content{
+    margin-left: 20%;
+}
+
+
+
+/* 杂项修改 */
+#subbtn{
+    width: 100%;
+    text-align: center;
+}
+#search{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 550;
+}
+#search label{
+    font-size: 15px;
+    font-weight: 550;
+}
+table{
+    color: #6b7c8a;
+}
+/*  mutation type fade-in  */
+@keyframes fade_in {
+
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+
+}
+
+@-webkit-keyframes fade_in {/*针对webkit内核*/
+
+    0% {opacity: 0;}
+
+    40% {opacity: 0;}
+
+    100% {opacity: 1;}
+
+}
+#mu_t {
+
+    animation: fade_in;/*动画名称*/
+
+    animation-duration: 1s;/*动画持续时间*/
+    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+    -webkit-animation:fade_in 1.5s ;/*针对webkit内核*/
+
+}
+
+/* quick match button */
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    padding: .5em 1.5em;
+    color: white;
+    background: #ff8467;
+    border: none;
+    outline: none;
+    box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+    letter-spacing: 0.08em;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cssbuttons-io-button:hover {
+    filter: brightness(1.2);
+    color: rgb(0, 0, 0, .5);
+}
+
+.cssbuttons-io-button:active {
+    transition: 0s;
+    transform: rotate(-10deg);
+}
+
+/** quick match **/
+.input-style {
+    width: 20%;
+    padding: 6px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    box-shadow: 2px 2px 3px rgba(140, 140, 140, 0.5)
+}
+
+.input-style:focus {
+    border-color: #78b4a6;
+    box-shadow: 0 0 0 0.2rem #d3eae5;
+}

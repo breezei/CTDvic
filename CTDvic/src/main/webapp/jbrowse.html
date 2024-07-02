@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="author" content="CTDvic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>CTDvic</title>
+    <link rel="shortcut icon" href="IMAGE/c.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/pattern.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!--  custom    -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+    <style>
+       .dropdown-menu, .dropdown-menu li a{
+font-family: "Gill Sans", sans-serif;
+background-color: #599a94;
+font-size: 1.3rem;
+color: #e8e8e8 ;
+font-weight: 600;
+}
+.dropdown-menu{
+border-color: #3E6C6F;
+border-width: 1px;
+-webkit-transition: all 0.5s ease-in;
+-moz-transition: all 0.5s ease-in;
+-ms-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.dropdown-menu a:hover{
+color: #3E6C6F !important;
+background-color: aliceblue !important;
+}
+.transp {
+background-color:transparent;
+transition: background-color 1.5s;
+}
+.notransp{
+background-image: url(IMAGE/non_index.svg);
+background-repeat: no-repeat;
+background-size: cover;
+transition: background-color 1.5s;
+}
+    </style>
+</head>
+
+<body style="margin: 0; overflow-x: hidden;">
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <!-- nav start  -->
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <nav class="navbar navbar-default navbar-fixed-top" style="background-image:url(IMAGE/non_index.svg);background-repeat: no-repeat;  background-size: cover;border-color:transparent;" id="navigation" role="navigation">
+                        <div style="width: 50%; height: 100px; position: absolute;"><a href="index.html"><img src="IMAGE/logo.svg" style="position:relative;width:50%;height:90%; display: inline-block;"></a></div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent !important;">Search<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="search_mo.html">Variant-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_ml.html">Function-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_go.html">Gene-orient(GL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_gl.html">Function-orient(GL)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="curation.html">Curation</a>
+                                </li>
+                                <li>
+                                    <a href="tools.html">Tools</a>
+                                </li>
+                                <li>
+                                    <a href="jbrowse.html" class="active">Genome Browser</a>
+                                </li>
+                                <li>
+                                    <a href="download.html">Download</a>
+                                </li>
+                                <li>
+                                    <a href="submitdata.html">Submit data</a>
+                                </li>
+                                <li>
+                                    <a href="helps.html">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- jbrowse_main-->
+            <div class="row clearfix shift_down">
+                <div class="col-md-12 column">
+                    <div id="content" class="j-box" style="width: 90%; margin-left: 5%" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="box_head">
+                            <h4 class="pattern-diagonal-stripes-sm text-pattern" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">< Genome Browser View ></h4>
+                            <div class="pattern-diagonal-stripes-sm stripe" style="width: 100%"></div>
+                            <a href="helps.html#help3_5"><img id="wenhao" src="IMAGE/wenhao.png"></a>
+                        </div>
+                        <div style="height: 500px;border-radius: 10px">
+                            <iframe id="Genome Browseriframe" style="width:100%; text-align:center; height:100%; border:0"  src="http://bio-bigdata.hrbmu.edu.cn//CTDVbrowser?config=data/config.json&loc=chr1&assembly=hg38&tracks=all_mutations,Prostate_Cancer,Lung_Cancer,Classical Hodgkin Lymphoma">
+
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                AOS.init({
+                    once:true,
+                })
+            </script>
+            <!-- footer  -->
+            <div class="row clearfix shift_down_foot">
+                <div class="col-md-12 column" style="margin: 0; padding: 0;">
+                    <div class="foot">© College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, China.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

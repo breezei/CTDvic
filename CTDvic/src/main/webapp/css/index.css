@@ -1,0 +1,597 @@
+/*  autocomplete list style     */
+.autocomplete-suggestions {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #01345F;
+    border-radius: 5px;
+    background: #FFF;
+    cursor: default;
+    overflow: auto;
+    font-size: 13px;
+    color: #000;
+    /* #F53F61 #01345F */
+}
+.autocomplete-suggestions::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #F5F5F5;
+    border-radius: 0px;
+}
+
+.autocomplete-suggestions::-webkit-scrollbar
+{
+    width:20px;
+    background-color: #F5F5F5;
+}
+
+.autocomplete-suggestions::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.33, #ff6600),
+    color-stop(0.66, #ffffff),
+    color-stop(0.99, #009900));
+}
+
+.autocomplete-suggestion {
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-no-suggestion {
+    padding: 2px 5px;
+}
+
+.autocomplete-selected {
+    background: #a1f8de;
+}
+
+.autocomplete-suggestions strong {
+    color: #e2830d;
+}
+
+.autocomplete-group {
+    padding: 2px 5px;
+    display: block;
+    border-bottom: 1px solid #000;
+
+}
+.autocomplete-suggestion:hover {
+    transition: all 0.5s;
+    background: #12ad55;
+    color:white;
+}
+
+/*      navbar      */
+.navbar-nav > li > a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+    left: 300px;
+}
+.navbar-nav > li > a:hover{
+    color:#ff8467 !important;
+}
+.navbar-default .navbar-nav > li > a:focus{
+    color: #e8e8e8 !important;
+}
+.navbar .active{
+    color: #ff8467 !important;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    padding: 0;
+}
+.collapse{
+    margin: auto;
+    width: 80%; 
+}
+.navbar{
+    height: 100px;
+}
+#panel-894225 a{
+    text-decoration: none;
+}
+.panel_icon{
+    width: 80px;
+    height: 55px;
+}
+.dropdown-menu:before{
+    position: absolute;
+    top: -11px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 10px 8px 10px;
+    border-color: transparent transparent #599a94 transparent;
+    margin-left: 5px;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #e8e8e8;
+}
+.navbar-default .navbar-nav > .open > a{
+    color: #e8e8e8;
+}
+/*  齿轮滚动效果  */
+#gear{
+    position: relative;
+    left: 55%;
+    top:33%;
+    width: 80px;
+    height: 80px;          
+    background: url(../IMAGE/gear.png) no-repeat;
+    background-size: cover;         
+    -webkit-animation:run 6s linear 0s infinite;     
+}     
+
+#gear:hover{     
+    -webkit-animation-play-state:paused;
+    
+} 
+
+@-webkit-keyframes run{     
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(360deg);     
+    }     
+}
+
+/*   foot style     */
+#index_foot_top{
+    background: url(../IMAGE/foot_top.svg) no-repeat;
+    width: 100%;
+    background-size:cover !important;
+    height: 333px;
+    position: relative;
+    top:40px;
+    margin: 0;
+    padding: 0;
+}
+.foot_message{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#index_foot_top h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 35px;
+    text-transform: none;
+    font-weight: 500;
+    position: relative;
+}
+#index_foot_top h4:before{
+    background: #ffffff;
+    border: 0 none;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 8px 0 10px;
+    position: absolute;
+    bottom: -20px;
+    width: 80%;
+}
+#index_foot_top ul li{
+    padding: 0;
+    list-style: none;
+}
+#index_foot_top ul li{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.9;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#index_foot_top a{
+    text-decoration: none;
+    color: #ffffff;
+    outline: none;
+}
+#index_foot_top p{
+    text-decoration: none;
+    color: #ffffff;
+    outline: none;
+}
+#index_foot_top a:hover {
+    color: #17e151;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.index_foot{
+    width: 100%;
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    top:16px;
+}
+.foot{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+    background-color: #11253F;
+}
+
+/*   除导航栏外整体下移趋势（导航为绝对定位导致页面文档流整体上移）    */
+.shift_down{
+    position: relative;
+    top: 150px;
+}
+.shift_down_foot{
+    position: relative;
+    top: 200px;
+}
+
+/* inputplaceholder 默认样式*/
+.form-control::input-placeholder{
+	color: #3B656A;
+}
+.form-control::-webkit-input-placeholder{	
+	color: #3B656A;
+}
+.form-control::-moz-placeholder{
+	color: #3B656A;
+}
+.form-control::-moz-placeholder{
+	color: #3B656A;
+}
+.form-control::-ms-input-placeholder{
+	color: #3B656A;
+}
+/*
+.form-control:focus,.form-group{
+    border-color: #3B656A;
+}
+/*     name and explain */
+.ne{
+    color: white;
+    position: relative;
+    top:160px;
+    left: 110px;
+    font-weight: 500;
+
+}
+#typee{
+    position: relative;
+    left: 30px;
+    width: 80%;
+    font-size: 2rem;
+}
+#typeh .typed-cursor{/* 直接设置外部div或者用.typed-cursor均可改变键入键样式 */
+    font-size: 6rem;
+    font-weight: 600;
+}
+/*   quike search  */
+.qsearch_font h1{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+.searchBox {
+    color: #6b7c8a;
+    font-size: 2rem;
+    display: flex;
+    width: 60%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #ffffff;
+    border-radius: 6PX;
+    position: relative;
+  }
+  
+  .searchButton {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+  /*hover effect*/
+  .searchButton:hover {
+    color: #000000;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+  }
+  /*button pressing effect*/
+  .searchButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .searchInput {
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: #6b7c8a;
+    padding: 24px 46px 24px 26px;
+  }
+
+/*  swiper  */
+.slide_con{
+}
+.swiper {
+    width: 100%;
+    padding-bottom: 50px;
+}
+:root{
+    --swiper-theme-color: white;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width:  300px;
+    height: 100%;
+    padding-top:3px;
+}
+.caption h3{
+}
+.caption p{
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+.thumbnail .caption{
+    font-size: 10px;
+}
+.thumbnail a{
+    margin: 5px;
+}
+.thumbnail{
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 5px;
+    border-color: none;
+}
+.caption{
+    height: 60%;
+    border-radius: 5px;
+    text-align: center;
+}
+.slide_s{
+
+}
+    /*   slide内button   */
+/* this button is inspired from this -- https://www.newline.co/pricing */
+.caption button {
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: #4e8986;
+    transition: all 0.2s;
+    border-radius: 3px;
+}
+
+.caption button:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+    to {
+        background-position: var(--width);
+    }
+}
+
+
+/*   外层box   */
+.box,.j-box,.r-box,.d-box,.sur-box,.qucs-box{
+    width: 85%;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 7.5%;
+    background: transparent;
+    position: relative;
+    border: #f1f3f4 solid 1px;
+    background-color: rgba(244,244,242,0.8);
+}
+.box_head h4{
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: rgba(73, 106, 101, 0.91);
+    color: rgba(73, 106, 101, 0.91);
+}
+.box:hover {
+    z-index: 4;
+    box-shadow: 3px 10px 15px #94c2b7;
+    background-color: white;
+    border: none;
+}
+.box_head{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+/*  全文样式设置     */
+body{
+    background-color: #ffffff;
+    margin: 0;/* 去掉自带的外边距 */
+    color: #6b7c8a;
+    font-family: 'Montserrat', sans-serif;;
+}
+.part_search h4{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 550;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+/*      水平分割线       */
+.horizontal-line{
+    width: 85%;
+    height: 1px;
+    background-color: #f1f3f4;
+    margin: 10px 7.5%;
+}
+.horizontal-line2px{
+    width: 90%;
+    height: 4px;
+    background-color: #f1f3f4;
+    margin: 10px 5%;
+}
+.horizontal-line1px-120{
+    width: 133%;
+    height: 1px;
+    background-color: #d5d6d7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -220px;
+}
+.stripe{
+    width: 96%;
+    height: 3px;
+    background-color: #a7c7c2;
+    color: rgba(118, 171, 163, 0.91);
+    margin: 15px 0;
+    box-shadow: 0 2px 2px #9d9d9d;
+}
+.line{
+    width: 96%;
+    height: 2px;
+    background-color: rgba(244,244,242,0.8);
+    color: rgba(178, 178, 178, 0.91);
+}
+
+.statistics .bar{
+    width: 90%;
+    height: 500px;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.statistics .pie{
+    width: 90%;
+    height: 500px;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/*  box_head每页大标题及问号  */
+
+.box_head img,#tools_head img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 40px;
+    width: 40px;
+}
+#content p{
+    font-size: 1.7rem;
+    display: block;
+    text-align: left;
+    color: #57595d;
+    width:90%;
+    margin-left: 3%;
+    margin-top: 4px;
+}
+#content .emphasis{
+    font-size: 2rem;
+    color: rgb(18, 129, 51);
+    font-style: italic;
+}
+#content .number{
+    font-size: 2rem;
+    color: rgb(246, 115, 60);
+}
+
+/* datatable 样式
+table.dataTable tbody tr.even {
+    background-color: #ffcdbb;
+}*/
+
+/* 更改奇数行的背景色
+table.dataTable tbody tr.odd {
+    background-color: #d6ffe1;
+}*/
+table.dataTable tbody tr:hover {
+    background-color: #f1fffd; /* 设置高亮颜色 */
+}
+table.dataTable tbody a{
+    color: #37686b;
+}
+table.dataTable tbody a:hover{
+    color: #f86f34;
+}
+table.dataTable tbody{
+    font-size: 1.5rem;
+    color: #57595d;
+}
+table.dataTable thead th{
+    font-size: 1.8rem;
+    color: rgb(75, 82, 86);
+    font-weight: 600 ;
+}

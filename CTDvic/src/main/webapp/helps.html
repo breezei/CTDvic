@@ -1,0 +1,745 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="author" content="CTDvic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>CTDvic</title>
+    <link rel="shortcut icon" href="IMAGE/c.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/pattern.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <!--    custom      -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/help.css" rel="stylesheet">
+    <style>
+       .dropdown-menu, .dropdown-menu li a{
+font-family: "Gill Sans", sans-serif;
+background-color: #599a94;
+font-size: 1.3rem;
+color: #e8e8e8 ;
+font-weight: 600;
+}
+.dropdown-menu{
+border-color: #3E6C6F;
+border-width: 1px;
+-webkit-transition: all 0.5s ease-in;
+-moz-transition: all 0.5s ease-in;
+-ms-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.dropdown-menu a:hover{
+color: #3E6C6F !important;
+background-color: aliceblue !important;
+}
+.transp {
+background-color:transparent;
+transition: background-color 1.5s;
+}
+.notransp{
+background-image: url(IMAGE/non_index.svg);
+background-repeat: no-repeat;
+background-size: cover;
+transition: background-color 1.5s;
+}
+    </style>
+</head>
+
+<body style="margin: 0; overflow-x: hidden;">
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <!-- nav start  -->
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <nav class="navbar navbar-default navbar-fixed-top" style="position: relative; background-image:url(IMAGE/non_index.svg);background-repeat: no-repeat;  background-size: cover;border-color:transparent;" id="navigation" role="navigation">
+                        <div style="width: 50%; height: 100px; position: absolute;"><a href="index.html"><img src="IMAGE/logo.svg" style="position:relative;width:50%;height:90%; display: inline-block;"></a></div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent !important;">Search<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="search_mo.html">Variant-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_ml.html">Function-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_go.html">Gene-orient(GL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_gl.html">Function-orient(GL)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="curation.html">Curation</a>
+                                </li>
+                                <li>
+                                    <a href="tools.html">Tools</a>
+                                </li>
+                                <li>
+                                    <a href="jbrowse.html">Genome Browser</a>
+                                </li>
+                                <li>
+                                    <a href="download.html">Download</a>
+                                </li>
+                                <li>
+                                    <a href="submitdata.html">Submit data</a>
+                                </li>
+                                <li>
+                                    <a href="helps.html" class="active">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- help_main-->
+            <div class="row clearfix shift_down" style="position: relative;top: 20px">
+                <div class="col-md-12 column">
+                    <div id="content" class="box" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="box_head">
+                            <h4 class="pattern-diagonal-stripes-sm text-pattern" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">< User Guide ></h4>
+                            <div class="pattern-diagonal-stripes-sm stripe" style="width: 100%"></div>
+                            <a href="#"><img id="wenhao" src="IMAGE/wenhao.png"></a>
+                        </div>
+                        <div style="background-color:white;position: relative;height:800px;border-radius: 0.5em;">
+                            <div id="fixnav">
+                                <div class="row">
+                                    <div  class="col-md-3" id="myScrollspy">
+                                        <ul class="nav nav-tabs nav-stacked affix-top" id="myNav" >
+                                            <li class=""><a href="#help1">1. What Information is Available in the CTDvic?</a></li>
+                                            <li class=""><a href="#help2">2. What data are Included in the CTDvic?</a></li>
+                                            <li class=""><a href="#help3_1_1">3. How to Retrieve data using CTDvic?</a></li>
+                                            <li class=""><a href="#help3_1_1">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Home</a></li>
+                                            <li class=""><a href="#help3_1_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.1 Basic information</a></li>
+                                            <li class=""><a href="#help3_1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.2 CTDvic statistics</a></li>
+                                            <li class=""><a href="#help3_1_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.3 Quick search result</a></li>
+                                            <li class=""><a href="#help3_2_1">&nbsp;&nbsp;&nbsp;&nbsp;3.2 Search</a></li>
+                                            <li class=""><a href="#help3_2_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1 Variant-Orient(VL)</a></li>
+                                            <li class=""><a href="#help3_2_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2 Function-Orient(VL)</a></li>
+                                            <li class=""><a href="#help3_2_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.3 Gene-Orient(GL)</a></li>
+                                            <li class=""><a href="#help3_2_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.4 Function-Orient(GL)</a></li>
+                                            <li class=""><a href="#help3_2_5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.5 Variant-level result</a></li>
+                                            <li class=""><a href="#help3_2_6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.6 Gene-level result</a></li>
+                                            <li class=""><a href="#help3_2_7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.7 Variants detail</a></li>
+                                            <li class=""><a href="#help3_2_8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.8 Genes detail</a></li>
+                                            <li class=""><a href="#help3_3_1">&nbsp;&nbsp;&nbsp;&nbsp;3.3 curation</a></li>
+                                            <li class=""><a href="#help3_3_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 Curation interface</a></li>
+                                            <li class=""><a href="#help3_3_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.2 Curation result</a></li>
+                                            <li class=""><a href="#help3_3_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.3 Survival curve</a></li>
+                                            <li class=""><a href="#help3_3_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.4 Analysis result interpretation</a></li>
+                                            <li class=""><a href="#help3_4_1">&nbsp;&nbsp;&nbsp;&nbsp;3.4 Tools</a></li>
+                                            <li class=""><a href="#help3_4_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.1 geMER</a></li>
+                                            <li class=""><a href="#help3_4_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.2 Upload files</a></li>
+                                            <li class=""><a href="#help3_4_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.4.3 Analyse result</a></li>
+                                            <li class=""><a href="#help3_5">&nbsp;&nbsp;&nbsp;&nbsp;3.5 Genome browser</a></li>
+                                            <li class=""><a href="#help3_6">&nbsp;&nbsp;&nbsp;&nbsp;3.6 Download</a></li>
+                                            <li class=""><a href="#help3_7">&nbsp;&nbsp;&nbsp;&nbsp;3.7 Submit</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-9" id="myhelpcont">
+                                        <div class="row" style="margin-bottom: 15px; height:800px;overflow-y: scroll">
+                                            <div id="help1" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                                <h4>1. What Information is Available in the CTDvic?</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse1" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                Circulating tumor DNA (ctDNA) variants are potential tumor biomarker present in circulating fluids. At present, minimally invasive or non-invasive ctDNA mutation detection technology based on liquid biopsy is increasingly being valued in cancer diagnosis and treatment monitoring, with enormous potential for clinical application.</p>
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">Here, we established the CTDvic database (<a href="http://bio-bigdata.hrbmu.edu.cn/CTDvic">http://bio-bigdata.hrbmu.edu.cn/CTDvic</a>), which aimed to documenting the clinical function and application value of ctDNA variants.
+                                                            </p>
+                                                            <br>
+                                                            <p style="text-align: center;"><img style="width: 70%;margin: auto" src="IMAGE/1_abstract.png" class="img-responsive"></p>
+                                                           <br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help2" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                                <h4>2. What data are Included in the CTDvic?</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse2" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                The current version of CTDvic manually curates 4,797 published literatures until 8 May 2024. Experimentally supported variants related to clinical action were categorized into two groups. The Variant-Level group includes 82 diseases, 158 genes, 12 mutation types, and 865 major missense mutations,  and the Gene-Level includes 58 diseases and 132 genes; While the Prediction-Level data acquired through calculating 38 cfDNA mutation spectrum includes 21 diseases, 2,305 tumor driver genes, and 23,012 gene hotspot mutations.
+                                                            </p>
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_1_1" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                                                <h4>3.1.1 Basic information</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse6" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Users can input disease/gene keywords for quick search, such as TP53, De Differentiated Liposarcoma, etc.</p>
+                                                            <p><span class="number">2.</span> Introduction to the functions of each module and corresponding hyperlinks.</p>
+                                                            <p><span class="number">3.</span> Click to check quick search results.</p>
+                                                            <p style="text-align: center;"><img src="IMAGE/3.1.1.png" class="img-responsive"></p>
+                                                            <p class="bottom_link"><a href="#help3_1_3">quick search result introduction</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_1_2" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                                                <h4>3.1.2 CTDvic statistics</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse7" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Overall data statistics of CTDvic.</p>
+                                                            <p><span class="number">2.</span> Experimentally supported disease types statistics at the Variant-Level and Gene-Level. </p>
+                                                            <p><span class="number">3.</span> Experimentally supported genes statistics at the Variant-Level and Gene-Level.</p>
+                                                            <p><span class="number">4.</span> Experimentally supported variant types statistics at the Variant-Level.</p>
+                                                            <p><span class="number">5.</span> Statistical analysis of missense mutations, which constitute the majority at the experimentally supported variant level.</p>
+                                                            <p><span class="number">6.</span> Statistical analysis of disease types in hotspot mutations predicted from collected cfDNA mutation spectrums.</p>
+                                                            <p><span class="number">7.</span> Statistical analysis of genes in hotspot mutations predicted from collected cfDNA mutation spectrums.</p>
+                                                            <br>
+                                                            <p style="text-align: center;"><img src="IMAGE/3.1.2_CTDVic_statistics.png" class="img-responsive"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_1_3" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3.1.3">
+                                                                <h4>3.1.3 Quick search result</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse3.1.3" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p>For the diseases or genes entered in the quick search box, search for them in three tables: the experimentally validated Variant-Level, the experimentally validated Gene-Level, and the predicted driver genes and hotspot mutations. Users can obtain the number of record entries at <span class="number">1</span> and click on <span class="number">2</span> to view specific information about the corresponding results.</p>
+                                                            <p><img src="IMAGE/3.1.3_quicksearch_result.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_1" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                                                <h4>3.2.1 Variant-Orient(VL)</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse9" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Basic introduction and data format explanation of the Variant-Orient (VL) interface.</p>
+                                                            <p><span class="number">2.</span> Please select the diseases you wish to query. The right half of the interface allows for rapid matching and addition of diseases.</p>
+                                                            <p><span class="number">3.</span> Please select the genes you wish to query. The right half of the interface allows for rapid matching and addition of genes.</p>
+                                                            <p><span class="number">4.</span> Please choose the variant type you wish to query. By default, all variant types are selected.</p>
+                                                            <p><span class="number">5.</span> Please enter the missense mutations you're interested in, most of which should be specified at the protein level (e.g., G1202R). A few can also be entered using formats such as c.228C>T and chr3: g.37025749T>A. To input multiple mutations, separate them using the Enter key.</p>
+                                                            <p><span class="number">6.</span> 'Submit' allows users to submit queries, 'Example' provides query examples, and 'Reset' allows resetting all options.</p>
+                                                            <p><span class="number">7.</span> Click to view the explanation of the query results for 'Variant-Orient (VL)'.</p>
+                                                            <p><img src="IMAGE/3.2.1_vo(vl).png"></p>
+                                                            <p class="bottom_link"><a href="#help3_2_5">search result</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_2" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                                                <h4>3.2.2 Function-Orient(VL)</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse10" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Basic introduction and data format explanation of the Function-Orient (VL) interface.</p>
+                                                            <p><span class="number">2.</span> Please select the diseases you wish to query. The right half of the interface allows for rapid matching and addition of diseases.</p>
+                                                            <p><span class="number">3.</span> Please select the clinical functions you wish to query related to variants.</p>
+                                                            <p><span class="number">4.</span> 'Submit' allows users to submit queries, 'Example' provides query examples, and 'Reset' allows resetting all options.</p>
+                                                            <p><span class="number">5.</span> Click to view the explanation of the query results for 'Function-Orient (VL)'.</p>
+                                                            <p><img src="IMAGE/3.2.2_fo(vl).png"></p>
+                                                            <p class="bottom_link"><a href="#help3_2_5">search result</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_3" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                                                                <h4>3.2.3 Gene-Orient(GL)</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse11" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Basic introduction and data format explanation of the Gene-Orient (GL) interface.</p>
+                                                            <p><span class="number">2.</span> Please select the diseases you wish to query. The right half of the interface allows for rapid matching and addition of diseases.</p>
+                                                            <p><span class="number">3.</span> Please select the genes you wish to query. The right half of the interface allows for rapid matching and addition of genes.</p>
+                                                            <p><span class="number">4.</span> 'Submit' allows users to submit queries, 'Example' provides query examples, and 'Reset' allows resetting all options.</p>
+                                                            <p><span class="number">5.</span> Click to view the explanation of the query results for 'Gene-Orient (GL)'.</p>
+                                                            <p><img src="IMAGE/3.2.3_go(gl).png"></p>
+                                                            <p class="bottom_link"><a href="#help3_2_6">search result</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_4" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                                                                <h4>3.2.4 Function-Orient(GL)</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse12" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <div class="panel-body">
+                                                                <p><span class="number">1.</span> Basic introduction and data format explanation of the Function-Orient (GL) interface.</p>
+                                                                <p><span class="number">2.</span> Please select the diseases you wish to query. The right half of the interface allows for rapid matching and addition of diseases.</p>
+                                                                <p><span class="number">3.</span> Please select the clinical functions you wish to query related to genes.</p>
+                                                                <p><span class="number">4.</span> 'Submit' allows users to submit queries, 'Example' provides query examples, and 'Reset' allows resetting all options.</p>
+                                                                <p><span class="number">5.</span> Click to view the explanation of the query results for 'Function-Orient (GL)'.</p>
+                                                                <p><img src="IMAGE/3.2.4_fo(gl).png"></p>
+                                                                <p class="bottom_link"><a href="#help3_2_6">search result</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_5" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                                                <h4>3.2.5 Variant-level result</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse13" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p class="main_p">On the result page, all entries are listed with basic information including links to the detailed information, PMID, gene, variant type, variant description, disease, body fluid, sequencing method, experiment, drug resistance, disease prognosis, characteristic of tumors, prospects for detection, metastasis biomarker, therapy, and others.</p>
+                                                            <p><span class="number">1.</span> Click to copy or download the table.</p>
+                                                            <p><span class="number">2.</span> Users can input keywords from any column to filter the results.</p>
+                                                            <p><span class="number">3.</span> Click to collapse or expand the detailed content of cells.</p>
+                                                            <p><span class="number">4.</span> Users can drag the slide block to see complete information.</p>
+                                                            <p><span class="number">5.</span> Click to check the detail information of the entry in.</p>
+                                                            <p><img src="IMAGE/3.2.5_variant_level_result.png"></p>
+                                                            <p><a href="#help3_2_7">click to view variant detail</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_6" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+                                                                <h4>3.2.6 Gene-level result</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse14" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p class="main_p">On the result page, all entries are listed with basic information including links to the detailed information, PMID, gene, disease, body fluid, sequencing method, experiment, drug resistance, disease prognosis, characteristic of tumors, prospects for detection, metastasis biomarker, therapy, and others.</p>
+                                                            <p><span class="number">1.</span> Please Click to copy or download the table.</p>
+                                                            <p><span class="number">2.</span> Users can input keywords from any column to filter the results.</p>
+                                                            <p><span class="number">3.</span> Click to collapse or expand the detailed content of cells.</p>
+                                                            <p><span class="number">4.</span> Users can drag the slide block to see complete information.</p>
+                                                            <p><span class="number">5.</span> Click to check the detail information of the entry in.</p>
+                                                            <p><img src="IMAGE/3.2.6_gene_level_result.png"></p>
+                                                            <p><a href="#help3_2_8">click to view gene detail</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_7" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+                                                                <h4>3.2.7 Variants detail</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse15" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <div class="panel-body">
+                                                                <p><span class="number">1.</span> Users can access the basic information for the variant.</p>
+                                                                <p><span class="number">2.</span> Users can access the experimental methods and sequencing techniques used.</p>
+                                                                <p><span class="number">3.</span> Users can access clinical functional annotations related to variants, including drug resistance, disease prognosis, characteristics of tumors, prospects for detection, metastasis biomarkers, therapy strategies, and others.</p>
+                                                                <p><span class="number">4.</span> Users can access information about the chain (+/-) where the mutation occurs, mutation coordinates at the gDNA, cDNA, and protein levels, as well as the genome source and version utilized for coordinate conversion.</p>
+                                                                <p><span class="number">5.</span> The UCSC and the ENSEMBL genome hyperlinks can obtain variant distribution between +/- 10000bp intervals of the mutation site.</p>
+                                                                <p><span class="number">6.</span> Users can access pre-mutation protein structures predicted by AlphaFold and download PDB files.</p>
+                                                                <p><span class="number">7.</span> Users can search the external annotation information for the gene and mutation by clicking on the corresponding hyperlink logo.</p>
+                                                                <p><span class="number">8.</span> Users can access after-mutation protein structures predicted by alpha fold and download PDB files.</p>
+                                                                <p><img src="IMAGE/3.2.7_variant_detail.png"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_2_8" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+                                                                <h4>3.2.8 Genes detail</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse16" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <div class="panel-body">
+                                                                <p><span class="number">1.</span> Users can access the basic information for the gene.</p>
+                                                                <p><span class="number">2.</span> Users can access the experimental methods and sequencing techniques used.</p>
+                                                                <p><span class="number">3.</span> The UCSC and the ENSEMBL genome hyperlinks.</p>
+                                                                <p><span class="number">4.</span> Users can access clinical functional annotations related to genes, including drug resistance, disease prognosis, characteristic of tumors, prospects for detection, metastasis biomarker, therapy strategies, and others.</p>
+                                                                <p><span class="number">5.</span> Users can search the external annotation information for the gene by clicking on the corresponding hyperlink logo.</p>
+                                                                <p><img src="IMAGE/3.2.8_gene_detail.png"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_3_1" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">
+                                                                <h4>3.3.1 Curation interface</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse17" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Basic introduction and data format explanation of the Curation interface.</p>
+                                                            <p><span class="number">2.</span> Please select the diseases you wish to query. The right half of the interface allows for rapid matching and addition of diseases.</p>
+                                                            <p><span class="number">3.</span> Please select the genes you wish to query. The right half of the interface allows for rapid matching and addition of genes.</p>
+                                                            <p><span class="number">4.</span> Please select the genomic elements you wish to query.</p>
+                                                            <p><span class="number">5.</span> Input the chromosome and genome start/end sites of interest (optional) with the format: Chr17: 7574000-7575000.</p>
+                                                            <p><span class="number">6.</span> 'Submit' allows users to submit queries, 'Example' provides query examples, and 'Reset' allows resetting all options.</p>
+                                                            <p><span class="number">7.</span> Click to view the explanation of the query results for 'Curation'.</p>
+                                                            <p><img src="IMAGE/3.3.1_curation_search.png"></p>
+                                                            <p class="bottom_link"><a href="#help3_3_2">search result</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_3_2" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">
+                                                                <h4>3.3.2 Curation result</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse18" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p class="main_p">In the result page, Users can check detailed calculation results of cfDNA driver genes and hotspot mutations predicted by the geMER algorithm, including disease, PMID, gene, survival, p, nMut, MES.max, maxpos, MES.min, minpos, MES, Chromosome, ElementStart, ElementEnd, ElementLength, FDR, Elementkind, Reference_Genome, Hot_Position_Start, Hot_Position_End, Reference, Alteration, Mutation_type (<a href="#help3_3_4">parameter interpretation</a>).</p>
+                                                            <p><span class="number">1.</span> Please Click to copy or download the table.</p>
+                                                            <p><span class="number">2.</span> Users can input keywords from any column to filter the results.</p>
+                                                            <p><span class="number">3.</span> Click to check the prognostic value for the driver gene calculated from the cfDNA mutation spectrum. </p>
+                                                            <p><span class="number">4.</span> Users can drag the slide block to see complete information in Fig 2.</p>
+                                                            <p><img src="IMAGE/3.3.2_curation_result.png"></p>
+                                                            <p><a href="#help3_3_3">click to view survival condition</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_3_3" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3.3.3">
+                                                                <h4>3.3.3 Survival curve</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse3.3.3" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Patients' survival differences with mutation and without mutation group, and users can get the result with the Kaplan–Meier log-rank p-value.</p>
+                                                            <p><img style="width: 60%" src="IMAGE/3.3.3_survival_curve.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_3_4" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3.3.4">
+                                                                <h4>3.3.4 Analysis result interpretation</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse3.3.4" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> "Disease" : Disease type.</p>
+                                                            <p><span class="number">2.</span> "PMID" : PMID of dataset source.</p>
+                                                            <p><span class="number">3.</span> "Gene" : Driver gene symbol.</p>
+                                                            <p><span class="number">4.</span> "Survival" : Prognostic value of driver gene.</p>
+                                                            <p><span class="number">5.</span> "p" : p-value.</p>
+                                                            <p><span class="number">6.</span> "nMut" : The mutation number of driver gene in mutation spectrum.</p>
+                                                            <p><span class="number">7.</span> "MES.max" : Maximum of MES (mutation enrichment score).</p>
+                                                            <p><span class="number">8.</span> "maxpos" : The genomic element position corresponding to the MES maximum.</p>
+                                                            <p><span class="number">9.</span> "MES.min" : Minimum of MES (mutation enrichment score).</p>
+                                                            <p><span class="number">10.</span> "minpos" : The genomic element position corresponding to the MES minimum.</p>
+                                                            <p><span class="number">11.</span> "MES" : The maximum deviation of mutation accumulation score.</p>
+                                                            <p><span class="number">12.</span> "Chromosome" : Chromosome.</p>
+                                                            <p><span class="number">13.</span> "ElementStart" : The start position of element sequence.</p>
+                                                            <p><span class="number">14.</span> "ElementEnd" : The end position of element sequence.</p>
+                                                            <p><span class="number">15.</span> "ElementLength" : The length of element sequence.</p>
+                                                            <p><span class="number">16.</span> "FDR" : The adjusted False Discovery Rate.</p>
+                                                            <p><span class="number">17.</span> "Elementkind" : Gene element kind.</p>
+                                                            <p><span class="number">18.</span> "Reference_Genome" : Reference genomic version.</p>
+                                                            <p><span class="number">20.</span> "Hot_Position_Start" : Start position (Hotspot mutation position) in the chromosome.</p>
+                                                            <p><span class="number">21.</span> "Hot_Position_End" : End position (Hotspot mutation position) in the chromosome.</p>
+                                                            <p><span class="number">22.</span> "Reference" : Reference nucleotide.</p>
+                                                            <p><span class="number">23.</span> "Alteration" : Alteration nucleotide.</p>
+                                                            <p><span class="number">24.</span> "Mutation_type" : Type of mutation.</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_4_1" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">
+                                                                <h4>3.4.1 geMER</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse20" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                The geMER integrates somatic mutations and element genomic sequence, screens mutation enrichment regions in genomic elements based on the mutation set enrichment analysis (MSEA). Briefly, it mimics a walker moving along the genomic sequence of a given element while recording an accumulation score, whose change depends on mutation occurrence and frequency. The maximum variation of accumulation score indicates both location and degree of mutation clusters. Specifically, MAS is defined as mutation accumulation score starting with 0, it is recorded at each site while moving along element sequence. MAS increases when encountering a mutation and decreases at non-mutant positions in tumor samples. The increment and decrement of MAS is separately calculated by:
+                                                            </p>
+                                                            <p><img style="width: 40%; margin: auto" src="IMAGE/3.4.1_eMHR_formular1.png"></p>
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                where Y is a vector recording number of mutation records in each genome site, and the length of genomic element sequence is L, that is, <math><mi mathvariant="normal">Y </mi> <mo>=</mo><mi>(</mi><msub><mtext>y</mtext><mn>1</mn></msub><mtext>, ... ,</mtext><msub><mtext>y</mtext><mtext>L</mtext></msub><mi>)</mi></math>. The sum of increments is equal to the sum of decrements, both being 1. Thus, MAS at the <math><msup><mi>i</mi><mi style="font-style:italic;">th</mi></msup></math> position is computed by:
+                                                            </p>
+                                                            <p><img style="width: 32%; margin: auto" src="IMAGE/3.4.1_eMHR_formular2.png"></p>
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                where <math><msup><mi>L</mi><mi>M</mi></msup></math> is a vector of positions that mutations occur, and the increment at mutant position is calculated by <math><msub><mtext>y</mtext><mi>j</mi></msub><mo>×</mo><msub><mtext>S</mtext><mi style="font-style:italic;">inc</mi></msub></math>, where <math><mn>1</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mi>L</mi></math> and <math><mi>j</mi><mo>∈</mo><msup><mi>L</mi><mi>M</mi></msup></math>, The decrease of all non-mutant positions is consistently <math><msub><mi>S</mi><mi style="font-style:italic;">dec</mi></msub></math>. Therefore, MAS bridges of element sequence is expected to present a sharp increment in a short distance where mutations clusters. Thus, MES is defined as the maximum deviation of MAS, which indicates where mutations enrich and abundance of enrichment:
+                                                            </p>
+                                                            <p><img style="width: 30%; margin: auto" src="IMAGE/3.4.1_eMHR_formular3.png"></p>
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                An empirical p-value is calculated to estimate MES significance using a randomization-based test. Given a genomic element, mutation positions whose number is the same as true mutation records across the sequence is selected randomly, allowing for replacement. The randomization process is implemented 1000 times:
+                                                            </p>
+                                                            <p><img style="width: 21%; margin: auto" src="IMAGE/3.4.1_eMHR_formular4.png"></p>
+                                                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                                                where <math><mtext>MES(𝜋)</mtext></math> is the MES value vector of randomly selected mutations in the given genomic element. Benjamini-Hochberg procedure is used to adjust p-values. Finally, genes with an FDR < 0.05 are considered as candidate element drivers.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_4_2" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">
+                                                                <h4>3.4.2 Upload files</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse21" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p class="main_p">In the tools module, users can upload mutation spectra (from either tissue or cfDNA) (required). It will calculate tumor driver genes and hotspot mutations through the <a href="#help3_4_1">geMER algorithm</a>. If users also upload the patient's survival data (optional), the server could calculate the driver gene prognostic value.</p>
+                                                            <p class="main_p"><span class="number" style="font-size: 1.7rem">Variant.txt (Fig 1) and Survival.txt (Fig 2) file format instruction:</span></p>
+                                                            <p><span class="number">1.</span> The 'Tumor_Sample_Barcode' column as patient ID. </p>
+                                                            <p><span class="number">2.</span> The 'Chromosome' column as the chromosome where the mutation is located. </p>
+                                                            <p><span class="number">3.</span> The 'Start_Position' column as the starting position of the mutation on the genome. </p>
+                                                            <p><span class="number">4.</span> The 'End_Position' column as the ending position of the mutation on the genome. </p>
+                                                            <p><span class="number">5.</span> The 'Hugo_Symbol' column as gene symbol. </p>
+                                                            <p><span class="number">6.</span> The 'Reference' column as the nucleotide sequence before the mutation, using '_' to indicate unknown bases.</p>
+                                                            <p><span class="number">7.</span> The 'Alteration' column as the nucleotide sequence after the mutation, using '_' to indicate unknown bases. </p>
+                                                            <p><span class="number">8.</span> The 'Mutation_type' column as the mutation type, using '_' to indicate unknown types. allowed types include: </p>
+                                                            <p>'MISSENSE', 'EXON', 'FRAMESHIFT', 'NONSENSE', 'SILENT', 'PROTEINDEL', 'PROTEININS', 'SPLICE_REGION', 'SPLICE', 'INTRON', 'UTR_3',
+                                                                'UTR_5', 'NONSTANDARD', 'NONCODING', 'SNV', 'MNV', 'insertion', 'Small_deletion'.</p>
+                                                            <p><span class="number">9.</span> The 'patient_id' column as patient ID. </p>
+                                                            <p><span class="number">10.</span> The 'status' column as the survival or disease progression status of the patient at the last follow-up. </p>
+                                                            <p><span class="number">11.</span> The 'PFS' as progression-free survival, which can be replaced by 'OS' (overall survival). </p>
+                                                            <p><img src="IMAGE/3.4.2_uploadfile_example_format.png"></p>
+                                                            <br>
+                                                            <p class="main_p"><span class="number" style="font-size: 1.7rem">Interface introduction:</span></p>
+                                                            <p><span class="number">1.</span> Basic introduction and data format explanation of the tools interface.</p>
+                                                            <p><span class="number">2.</span> Select the mutation spectrum and the patient survival file that needs to be analyzed. The mutation spectrum is required, and the patient survival file is optional. The file format is shown in the example file. </p>
+                                                            <p><span class="number">3.</span> Users can download sample files.</p>
+                                                            <p><span class="number">4.</span> Select reference genome version.</p>
+                                                            <p><span class="number">5.</span> Users can fill in the mail address to receive notifications in the 'E-Mail' section. If you haven't provided the email address, please refrain from taking any further actions on the page until the analysis is complete.</p>
+                                                            <p><span class="number">6.</span> 'Submit' allows users to submit analysis.</p>
+                                                            <p><span class="number">7.</span> Click to view the explanation of the analysis results.</p>
+                                                            <p><img src="IMAGE/3.4.2_uploadfile.png"></p>
+                                                            <p class="bottom_link"><a href="#help3_4_3">Analyse result</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_4_3" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">
+                                                                <h4>3.4.3 Analyse result</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse22" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Users can download the analysis results of different genomic regions such as 3'UTR, 5'UTR, CDS, promote, and splice site separately (<a href="#help3_3_4">Parameter illustration same as above</a>).</p>
+                                                            <p><span class="number">2.</span> Users can select different driver genes to view the hotspot mutation distribution and the prognostic value of the gene. </p>
+                                                            <p><span class="number">3.</span> Visualize hotspot mutations distribution within the driver gene on the genome using the <a href="https://viz.stjude.cloud/tools/proteinpaint">ProteinPaint plugin(https://viz.stjude.cloud/tools/proteinpaint)</a>, the color of the dots represents different types of mutations. Users can export images in SVG format at the 'more' section</p>
+                                                            <p><span class="number">4.</span> Patients' survival differences with and without driver gene mutation  group, and users can get the result with the Kaplan–Meier log-rank p-value.</p>
+                                                            <p><img src="IMAGE/3.4.3_analyse_result.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_5" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">
+                                                                <h4>3.5 Genome browser</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse23" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Users can search for mutations here (format: chr1:1-1000), as well as zoom in and out genome views.</p>
+                                                            <p><span class="number">2.</span> Click to open the track selector <span class="number">3</span>.</p>
+                                                            <p><span class="number">3.</span> The genome browser includes experimentally verified mutations, predicted hotspot mutations, and mutations from external databases. All experimentally verified mutations are integrated into one track, while predicted hotspot mutations are divided into different tracks, and organized catalog according to cancer types.</p>
+                                                            <p><span class="number">4.</span> Experimentally verified mutation track, click <span class="number">5</span> to obtain detailed information on specific mutations.</p>
+                                                            <p><span class="number">6.</span> One of the hotspot mutation tracks (Prostate Cancer) predicted by <a href="#help3_4_1">geMER</a>, click <span class="number">7</span> to obtain detailed information about the hotspot mutation.</p>
+                                                            <p><img src="IMAGE/3.5_jbrowser.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_6" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse24">
+                                                                <h4>3.6 Download</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse24" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p><span class="number">1.</span> Click to download raw data of cfDNA mutation spectra (Fig 1).</p>
+                                                            <p><span class="number">2.</span> Users can obtain the information about mutation spectra and download the spectra and survival files.</p>
+                                                            <p><span class="number">3.</span> Click to download curated data (Fig 2).</p>
+                                                            <p><span class="number">4.</span> Users can perform bulk downloads of the Variation-Levels data experimentally verified.</p>
+                                                            <p><span class="number">5.</span> Users can perform bulk downloads of the Gene-Levels data experimentally verified.</p>
+                                                            <p><span class="number">6.</span> Users can perform bulk downloads of all driver genes and hotspot mutations predicted by the <a href="#help3_4_1">geMER</a>.</p>
+                                                            <p><img src="IMAGE/3.6_download.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="help3_7" class="col-md-12" style="padding-left: 30px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse25">
+                                                                <h4>3.7 Submit</h4>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse25" class="panel-collapse collapse in">
+                                                        <div class="panel-body">
+                                                            <p class="main_p">The "Submit" page provides a strategy for sharing experiments validated variants data for CTDvic update. The submitter is required to fill in the relevant information for the variant, as well as the user's e-mail. Please use "-" instead of in the unknown option. Refer to the following example:</p>
+                                                            <p><span class="number">1.</span> "PaperDoi" should be filled with the DOI number of the reference literature.</p>
+                                                            <p><span class="number">2.</span> "DiseaseName" should be filled with the name of the disease related to the experimentally verified variant.</p>
+                                                            <p><span class="number">3.</span> "Gene" should be filled with the gene symbol involved in the experimentally validated variant, such as TP53, KRAS, GNA11, etc.</p>
+                                                            <p><span class="number">4.</span> "VariantType" should be filled with the type of the experimentally validated variant, such as Missense, methylation, indel, etc.</p>
+                                                            <p><span class="number">5.</span> "VariantDescription" should be filled with a detailed description of the experimentally validated mutation, such as G12C, c.1789A>T, PAX3-NCOA1 fusion, etc.</p>
+                                                            <p><span class="number">6.</span> "BodyFluid" should be filled with the type of body fluid used in the liquid biopsy, including plasma, urine, cerebrospinal fluid, pleural effusion, sputum, semen, etc.</p>
+                                                            <p><span class="number">7.</span> "Experiment" should be filled with the experimental method or a summary of the experimental process.</p>
+                                                            <p><span class="number">8.</span> "Function" should be filled with the clinical function (utility) related to the experimentally validated variant.</p>
+                                                            <p><span class="number">9.</span> "SequenceMethod" should be filled with the sequencing technique used in the liquid biopsy, such as NGS, ddPCR, etc.</p>
+                                                            <p><span class="number">10.</span> "Email" should be filled with the email address of the submitter.</p>
+                                                            <p><img src="IMAGE/3.7_submit.png"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                </div>
+            </div>
+                </div>
+
+            <script>
+                AOS.init({
+                    once:true,
+                })
+            </script>
+            <!-- footer  -->
+            <div class="row clearfix shift_down_foot">
+                <div class="col-md-12 column" style="margin: 0; padding: 0;">
+                    <div class="foot">© College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, China.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

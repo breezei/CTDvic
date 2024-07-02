@@ -1,0 +1,147 @@
+
+/*   custom  */
+.d-box{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.butli{
+    display: inline-block;
+    list-style: none;
+}
+.but{
+    margin: 10px;
+}
+.but a{
+    text-decoration: none;
+}
+table.table td{
+    color: #6b7c8a;
+    font-size: 1.5rem;
+    font-weight:400;
+}
+table.table tr:nth-child(even) {
+    background-color: rgba(230, 245, 238, 0.68);
+}
+table.table tr > td:first-child{
+    color: #6b7c8a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Geneva, Verdana, sans-serif;
+    padding-left: 3%
+}
+table.table thead th{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.tdl{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tdl a{
+    color: #000000;
+    text-decoration: none;
+}
+.tdl span{
+    background-color: aliceblue;
+}
+hr.style2 {
+    width: 100%;
+    background-color: #966060;
+	border-top: 3px double #8c8b8b;
+}
+hr.style5 {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+}
+    
+hr.style8 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+hr.style11 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+.tab-content a{
+    display: inline-block;
+}
+.tab-pane img{
+    margin: 0;
+    position: relative;
+    display: block;
+    max-width: 80%; /* 设置图片的宽度为100%以确保不超出父容器 */
+    height: auto;
+}
+
+
+
+/*   样本及结果下载button   */
+.download_button{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #0E1822;
+    background-color: #184e77;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.download_button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.download_button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.download_button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #0E1822;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download_button .svg {
+    width: 20px;
+    fill: #fff;
+}
+
+.download_button:hover {
+    background: #0E1822;
+}
+
+.download_button:hover .button__text {
+    color: transparent;
+}
+
+.download_button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+/* 杂项 */
+td a{
+    color: #499349;
+}
+td a:hover{
+    color: #f86f34;
+}
+img{
+    z-index: 1;
+    position: relative;
+}
+

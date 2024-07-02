@@ -1,0 +1,249 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="author" content="CTDvic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>CTDvic</title>
+    <link rel="shortcut icon" href="IMAGE/c.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <script src="js/sweetalert.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/pattern.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!--        custom      -->
+    <script src="js/searchData.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+    <!--    autocomplete    -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-autocomplete.js"></script>
+    <script src="js/search_autocomplete.js"></script>
+    <style>
+        .dropdown-menu, .dropdown-menu li a{
+            font-family: "Gill Sans", sans-serif;
+            background-color: #599a94;
+            font-size: 1.3rem;
+            color: #e8e8e8 ;
+            font-weight: 600;
+        }
+        .dropdown-menu{
+            border-color: #3E6C6F;
+            border-width: 1px;
+            -webkit-transition: all 0.5s ease-in;
+            -moz-transition: all 0.5s ease-in;
+            -ms-transition: all 0.5s ease-in;
+            -o-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+        }
+        .dropdown-menu a:hover{
+            color: #3E6C6F !important;
+            background-color: aliceblue !important;
+        }
+        .transp {
+            background-color:transparent;
+            transition: background-color 1.5s;
+        }
+        .notransp{
+            background-image: url(IMAGE/non_index.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-color 1.5s;
+        }
+    </style>
+    </head>
+
+    <body style="margin: 0; overflow-x: hidden;">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <!-- nav start  -->
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <nav class="navbar navbar-default navbar-fixed-top" style="background-image:url(IMAGE/non_index.svg);background-repeat: no-repeat;  background-size: cover;border-color:transparent;" id="navigation" role="navigation">
+                                <div style="width: 50%; height: 100px; position: absolute;"><a href="index.html"><img src="IMAGE/logo.svg" style="position:relative;width:50%;height:90%; display: inline-block;"></a></div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" style="background-color: transparent !important;">Search<strong class="caret"></strong></a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="search_mo.html">Variant-orient(VL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_fo_ml.html" class="active">Function-orient(VL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_go.html">Gene-orient(GL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_fo_gl.html">Function-orient(GL)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="curation.html">Curation</a>
+                                        </li>
+                                        <li>
+                                            <a href="tools.html">Tools</a>
+                                        </li>
+                                        <li>
+                                            <a href="jbrowse.html">Genome Browser</a>
+                                        </li>
+                                        <li>
+                                            <a href="download.html">Download</a>
+                                        </li>
+                                        <li>
+                                            <a href="submitdata.html">Submit data</a>
+                                        </li>
+                                        <li>
+                                            <a href="helps.html">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+
+                    <!-- search_fo_ml_main-->
+                    <div class="row clearfix shift_down">
+                        <div class="col-md-12 column">
+                            <div id="content" class="box">
+                                <div class="box_head">
+                                    <h4 class="pattern-diagonal-stripes-sm text-pattern" data-aos="flip-left" data-aos-duration="1000">< Function-orient(VL) ></h4>
+                                    <div class="pattern-diagonal-stripes-sm stripe"></div>
+                                        <p><span class="number">1.</span> In <span class="emphasis">Function-orient(VL)</span> retrieval module, users can combine cancer type and clinical features, such as prognostic value, drug resistance, etc. To perform  queries of variant relevant clinical function at <span class="emphasis">Variant-Level</span>.</p>
+                                        <p><span class="number">2.</span> <span class="emphasis">Quick match</span> provide accurate search for diseases, click 'add' to include them in your query list.</p>
+                                    <p>Note: options marked with * are required.</p>
+                                    <a href="helps.html#help3_2_2"><img id="wenhao" src="IMAGE/wenhao.png"></a>
+                                    <div class="pattern-diagonal-stripes-sm stripe"></div>
+                                </div>
+                                <form id="search_form" name="search_form" method="get" action="fo_ml_result.jsp" onsubmit="return checkip()">
+                                <div id="search">
+                                <table style="border-collapse:separate; border-spacing:20px;width:100%;padding:20px 200px 20px 200px;">
+                               <!-- 疾病板块  -->
+                                 <tr>
+                                     <td width="90%" colspan="2">
+                                         <div data-aos="fade-left" data-aos-duration="1000"  data-aos-delay="500">
+                                             <div class="part_search" style="width: 60%; display: inline-block;">
+                                                 <div class="search_title"><img src="IMAGE/search_title1.svg"><h4>DISEASE*</h4></div>
+                                                 <div class="outside">
+                                                     <div class="inside" id="Variant_disease_inside">
+                                                         <ul id="Variant_disease" style="padding-left:10px;">
+                                                             <!-- Disease list -->
+                                                         </ul>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="part_search" style="width: 38%; display: inline-block; margin-left: 1%;">
+                                                 <div class="search_title"><img class="match_icon" src="IMAGE/match_icon.svg"><h4>DISEASE QUICK MATCH</h4></div>
+                                                 <div class="outside">
+                                                     <div class="inside">
+                                                         <input id="m_disease_quick" class="input-style" type="text" style="margin: 20px;width: 80%;height: 50px;" placeholder="Input disease...">
+                                                         <button id="m_disease_match_bt" title="Add" type="button" class="cssbuttons-io-button" style="margin: 20px" onclick="m_dQuickSearch()">
+                                                             <svg height="25" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path></svg>
+                                                             <span>Add</span>
+                                                         </button>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                  </td>
+                              </tr>
+
+                              <!--   功能选择板块   -->
+                              <tr>
+                                  <td>
+                                      <div class="part_search" data-aos="fade-right" data-aos-duration="1000"  data-aos-delay="500">
+                                          <div class="search_title"><img src="IMAGE/search_title1.svg"><h4>FUNCTION CHOOSE*</h4></div>
+                                          <div class="outside">
+                                              <div class="inside" id="Variant_function_inside">
+                                                  <ul class="selectfunction" style="padding-left:10px;">
+                                                      <li>
+                                                      <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="functionall" class="functionall" value="others"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>All</span></label></li>
+                                                      <ul>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="Drug resistance"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Drug resistance</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="disease prognosis"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Prognosis</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="characteration of tumors"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Characteristics of tumor</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="prospects for detection"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Prospects for detection</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="metastasis biomarker"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Metastasis biomarker</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input id="sample-function" type="checkbox" name="function" class="function" value="therapy"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>Targeted therapy</span></label></li>
+                                                          <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="function" class="function" value="others"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>others</span></label></li>
+                                                      </ul>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </td>
+                              </tr>
+
+
+
+                              <!--  提交板块  -->
+                              <tr>
+                                <td>
+                                  <div id="subbtn">
+                                    <button id="submit" type="submit" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="500"><span class="transition"></span><span class="gradient"></span><span class="label">Submit</span></button>
+                                    <button id="example" type="button" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="500"><span class="transition"></span><span class="gradient"></span><span class="label">Example</span></button>
+                                    <button id="reset_cus" type="button" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="500"><span class="transition"></span><span class="gradient"></span><span class="label">Reset</span></button>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              </table>
+
+
+                              </div>
+                              </form>
+                              </div>
+                              <script type="text/javascript">
+                                  AOS.init({
+                                      once: true,
+                                  });
+                                function checkip() {
+                                    var dl = $("input[name='diseasetype']:checked").length;
+                                    var fl = $("input[name='function']:checked").length;
+                                    if (dl == 0 || fl == 0) {
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'Oops...',
+                                            text: 'select one disease and function!',
+                                        })
+                                        return false;
+                                    } else {
+                                        return true;
+                                    }
+                                }
+                              </script>
+                        </div>
+                    </div>
+                    <!-- footer  --> 
+                    <div class="row clearfix shift_down_foot">
+                        <div class="col-md-12 column" style="margin: 0; padding: 0;">
+                            <div class="foot">© College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, China.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+    </body>
+</html>

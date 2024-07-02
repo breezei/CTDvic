@@ -1,0 +1,496 @@
+<html class="" lang="zxx">
+<head>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTDvic</title>
+    <link rel="shortcut icon" href="IMAGE/c.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <script src="js/sweetalert.js"></script>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/pattern.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!-- custom -->
+    <script src="js/searchData.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+    <!--    autocomplete    -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-autocomplete.js"></script>
+    <script src="js/search_autocomplete.js"></script>
+     <style>
+         .dropdown-menu, .dropdown-menu li a{
+             font-family: "Gill Sans", sans-serif;
+             background-color: #599a94;
+             font-size: 1.3rem;
+             color: #e8e8e8 ;
+             font-weight: 600;
+         }
+         .dropdown-menu{
+             border-color: #3E6C6F;
+             border-width: 1px;
+             -webkit-transition: all 0.5s ease-in;
+             -moz-transition: all 0.5s ease-in;
+             -ms-transition: all 0.5s ease-in;
+             -o-transition: all 0.5s ease-in;
+             transition: all 0.5s ease-in;
+         }
+         .dropdown-menu a:hover{
+             color: #3E6C6F !important;
+             background-color: aliceblue !important;
+         }
+         .transp {
+             background-color:transparent;
+             transition: background-color 1.5s;
+         }
+         .notransp{
+             background-image: url(IMAGE/non_index.svg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             transition: background-color 1.5s;
+         }
+    </style>
+    </head>
+
+    <body style="margin: 0; overflow-x: hidden;">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <!-- nav start  -->
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <nav class="navbar navbar-default navbar-fixed-top" style="background-image:url(IMAGE/non_index.svg);background-repeat: no-repeat;  background-size: cover;border-color:transparent; " id="navigation" role="navigation">
+                                <div style="width: 50%; height: 100px; position: absolute;"><a href="index.html"><img src="IMAGE/logo.svg" style="position:relative;width:50%;height:90%; display: inline-block;"></a></div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" style="background-color: transparent !important;">Search<strong class="caret"></strong></a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="search_mo.html" class="active">Variant-orient(VL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_fo_ml.html">Function-orient(VL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_go.html">Gene-orient(GL)</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="search_fo_gl.html">Function-orient(GL)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="curation.html">Curation</a>
+                                        </li>
+                                        <li>
+                                            <a href="tools.html">Tools</a>
+                                        </li>
+                                        <li>
+                                            <a href="jbrowse.html">Genome Browser</a>
+                                        </li>
+                                        <li>
+                                            <a href="download.html">Download</a>
+                                        </li>
+                                        <li>
+                                            <a href="submitdata.html">Submit data</a>
+                                        </li>
+                                        <li>
+                                            <a href="helps.html">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                           <!-- <div id="snowstart"></div> -->
+                        </div>
+                    </div>
+
+                    <!--      大图        -->
+                    <div class="row clearfix shift_down">
+                        <div class="col-md-12 column">
+                            <!--<div style="background-image:url(IMAGE/non_index.svg);  background-repeat: no-repeat;  background-size: cover; width: 100%;height: 500px; margin: 0;padding:0;">
+
+                            </div>-->
+                        </div>
+                    </div>
+
+
+                    <!-- search_mo_main-->
+                    <div class="row clearfix shift_down">
+                        <div class="col-md-12 column">
+                          <div id="content" class="box">
+                            <div class="box_head">
+                                <h4 class="pattern-diagonal-stripes-sm text-pattern" data-aos="flip-left" data-aos-duration="1000">< Variant-orient(VL) ></h4>
+                                <div class="pattern-diagonal-stripes-sm stripe"></div>
+                                <p><span class="number">1.</span> In <span class="emphasis">Variant-orient(VL)</span> retrieval module, users can query the experimentally supported clinical function of ctDNA at <span class="emphasis">Variant-Level</span> by keyword combinations of disease type, gene symbol, variant type, and mutation description (allowed to be filled in when the variants type is missense mutation).</p>
+                                <p><span class="number">2.</span> Mutation description section <span class="emphasis">input format:</span> G1202R, c.228C>T, chr3:g.37025749T>A; Multiple mutations should be separated by the enter key.</p>
+                                <p><span class="number">3.</span> <span class="emphasis">Quick match</span> provide accurate search for diseases or genes, click 'add' to include them in your query list.</p>
+                                <p>Note: options marked with * are required.</p>
+                                <a href="helps.html#help3_2_1"><img id="wenhao" src="IMAGE/wenhao.png"></a>
+                                <div class="pattern-diagonal-stripes-sm stripe"></div>
+                            </div>
+                            <form id="search_form" name="search_form" method="get" action="mo_result.jsp" onsubmit="return checkip()">
+                            <div id="search">
+                            <table style="border-collapse:separate; border-spacing:20px;width:100%;padding:20px 200px 20px 200px;">
+                           <!-- 疾病板块  -->
+                            <tr>
+                                <td width="90%" colspan="2">
+                                    <div data-aos="fade-left" data-aos-duration="1000"  data-aos-delay="500">
+                                        <div class="part_search" style="width: 60%; display: inline-block;">
+                                            <div class="search_title"><img src="IMAGE/search_title1.svg"><h4>DISEASE*</h4></div>
+                                            <div class="outside">
+                                                <div class="inside" id="Variant_disease_inside">
+                                                    <ul id="Variant_disease" style="padding-left:10px;">
+                                                        <!-- Disease list -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="part_search" style="width: 38%; display: inline-block; margin-left: 1%;">
+                                            <div class="search_title"><img class="match_icon" src="IMAGE/match_icon.svg"><h4>DISEASE QUICK MATCH</h4></div>
+                                            <div class="outside">
+                                                <div class="inside">
+                                                    <input id="m_disease_quick" class="input-style" type="text" style="margin: 20px;width: 80%;height: 50px;" placeholder="Input disease...">
+                                                    <button id="m_disease_match_bt" title="Add" type="button" class="cssbuttons-io-button" style="margin: 20px" onclick="m_dQuickSearch()">
+                                                        <svg height="25" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path></svg>
+                                                        <span>Add</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                          <!--   基因板块   -->
+                          <tr>
+                            <td width="90%" colspan="2">
+                                <div class="horizontal-line1px-120"></div>
+                                <div data-aos="fade-right" data-aos-duration="1000"  data-aos-delay="500">
+                                    <div class="part_search" style="width: 60%; display: inline-block;">
+                                        <div class="search_title"><img src="IMAGE/search_title1.svg"><h4>GENE*</h4></div>
+                                        <div class="outside">
+                                            <div class="inside" id="Variant_gene_inside">
+                                                <ul class="selectgene" style="padding-left: 10px;">
+                                                    <li>
+                                                       <label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="geneall" class="geneall"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>All</span></label>
+                                                       <!-- <label>Adenoma</label> -->
+                                                       <ul>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ABL1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ABL1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ADD1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ADD1</span></label></li><li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ACVR1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ACVR1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="AKT1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>AKT1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ALK"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ALK</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ALOX12B"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ALOX12B</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="APC"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>APC</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="AR"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>AR</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ARID1A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ARID1A</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ATM"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ATM</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="B2M"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>B2M</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BCAT1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BCAT1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BCL2L11"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BCL2L11</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BRAF"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BRAF</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BRCA1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BRCA1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BRCA2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BRCA2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="BTK"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>BTK</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CASP8"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CASP8</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CCND1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CCND1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CCND7"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CCND7</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CCNE1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CCNE1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDK12"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDK12</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDK17"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDK17</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDK4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDK4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDK6"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDK6</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDKN1B"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDKN1B</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDKN2A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDKN2A</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CDKN2B"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CDKN2B</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CHD4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CHD4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="C-KIT"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>C-KIT</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CTNNB1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CTNNB1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="CYP2D6"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>CYP2D6</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="DDR2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>DDR2</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="DPH3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>DPH3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EGFR"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EGFR</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EHBP1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EHBP1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EML4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EML4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERBB2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERBB2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERBB3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERBB3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERBB4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERBB4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERG"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERG</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERRFI1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERRFI1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ERα"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ERα</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ESR1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ESR1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EWSR1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EWSR1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EYA4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EYA4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="EZH2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>EZH2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FBXW7"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FBXW7</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FCGR3A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FCGR3A</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FGFR1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FGFR1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FGFR2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FGFR2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FGFR3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FGFR3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FOXA1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FOXA1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="FOXL2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>FOXL2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="GNA11"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>GNA11</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="GNAQ"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>GNAQ</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="GRIA4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>GRIA4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="GSTP1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>GSTP1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="H3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>H3</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="H3F3A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>H3F3A</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HCK"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HCK</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HER2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HER2</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HNF1A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HNF1A</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HOXA9"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HOXA9</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HPCAL1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HPCAL1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HRAS"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HRAS</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="HSP90AA1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>HSP90AA1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="IDH1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>IDH1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="IDH2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>IDH2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="IGF1R"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>IGF1R</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="IKZF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>IKZF1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ITGA3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ITGA3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ITPKB"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ITPKB</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="JAK1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>JAK1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="JAK2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>JAK2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="JAK3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>JAK3</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KDR"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KDR</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KIF5B"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KIF5B</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KIT"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KIT</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KMT2C"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KMT2C</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KMT2D"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KMT2D</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="KRAS"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>KRAS</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MAP14K1-AS9"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MAP14K1-AS9</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MAP2K1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MAP2K1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MATN2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MATN2</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MCL1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MCL1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input id="sample-gene" type="checkbox" name="gene" class="gene" value="MEK1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MEK1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MET"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MET</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MLH1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MLH1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MSC"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MSC</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="mSEPT9"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>mSEPT9</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="mTOR"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>mTOR</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MTRR"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MTRR</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MUC16"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MUC16</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MYC"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MYC</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MYCN"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MYCN</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MYD88"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MYD88</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="MYH9"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>MYH9</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NCOA1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NCOA1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NCOA2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NCOA2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NF1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NFE2L2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NFE2L2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NFKBIA"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NFKBIA</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NFKBIE"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NFKBIE</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NPTX2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NPTX2</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NPY"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NPY</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NRAS"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NRAS</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NTRK"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NTRK</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NTRK1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NTRK1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="NTRK3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>NTRK3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="P16"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>P16</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PALB2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PALB2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PAX3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PAX3</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PBRM1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PBRM1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PAXIP1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PAXIP1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PPM1D"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PPM1D</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PBX1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PBX1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PCLO"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PCLO</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PIK3CA"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PIK3CA</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PIK3R1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PIK3R1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PPP2R1A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PPP2R1A</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PREX2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PREX2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PTCH1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PTCH1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PTEN"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PTEN</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="PTPN11"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>PTPN11</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RAC1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RAC1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RAD51D"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RAD51D</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RIF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RIF1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RAF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RAF1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RASSF1a"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RASSF1a</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RB1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RB1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RET"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RET</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RHOA"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RHOA</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ROS1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ROS1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="RSPO"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>RSPO</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SDHA"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SDHA</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SEPT9"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SEPT9</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SOX17"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SOX17</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SETD2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SETD2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SMAD4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SMAD4</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SMARCB1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SMARCB1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="SRC"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>SRC</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="STRN"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>STRN</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TACC3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TACC3</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TPM4"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TPM4</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TP53BP1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TP53BP1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TERT"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TERT</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TGFBR2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TGFBR2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TMPRSS2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TMPRSS2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TP53"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TP53</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TPM3"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TPM3</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="TSC2"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>TSC2</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="U2AF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>U2AF1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="WIF1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>WIF1</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="WNT5A"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>WNT5A</span></label></li>
+                                                           <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="XRCC1"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>XRCC1</span></label></li>
+                                                        <li><label class="check_label"><div class="checkbox-wrapper-31"><input type="checkbox" name="gene" class="gene" value="ZNF880"><svg viewBox="0 0 35.6 35.6"><circle class="background" cx="17.8" cy="17.8" r="17.8"></circle><circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle><polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline></svg></div> <span>ZNF880</span></label></li>
+                                                      </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="part_search" style="width: 38%; display: inline-block; margin-left: 1%;">
+                                        <div class="search_title"><img class="match_icon" src="IMAGE/match_icon.svg"><h4>GENE QUICK MATCH</h4></div>
+                                        <div class="outside">
+                                            <div class="inside">
+                                                <input id="m_gene_quick" class="input-style" type="text" style="margin: 20px;width: 80%;height: 50px;" placeholder="Input gene...">
+                                                <button id="m_gene_match_bt" title="Add" type="button" class="cssbuttons-io-button" style="margin: 20px" onclick="m_gQuickSearch()">
+                                                    <svg height="25" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path></svg>
+                                                    <span>Add</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                          </tr>
+
+                          <!--  突变类型板块  -->
+                          <tr>
+                            <td style="width: 100%">
+                                <div class="horizontal-line1px-120"></div>
+                                <div id="mu_t" class="part_search " style="box-shadow: none; overflow: visible;">
+                                    <div class="search_title" style="border-top-left-radius: 4px;border-top-right-radius: 4px;"><img src="IMAGE/search_title1.svg"><h4>MUTATION TYPE</h4></div>
+                                    <div class="outside" style="overflow: visible">
+                                        <div class="inside" style="border: none; height: auto; overflow:visible;">
+                                            <select id="mt" name="mutation_type" class="wide" size="5">
+                                              <option value="all_mutation_type" selected style="z-index: 12">ALL</option>
+                                              <option id="sample-mutation-type" value="missense" >Missense</option>
+                                              <option value="amplification">Amplification</option>
+                                              <option value="loss">Loss</option>
+                                              <option value="copy number variation">Copy Number Variation</option>
+                                              <option value="methylation">Methylation</option>
+                                              <option value="indel">Indel</option>
+                                              <option value="deletion">Deletion</option>
+                                              <option value="insertion">Insertion</option>
+                                              <option value="frameshift">Frameshift</option>
+                                              <option value="gene fusion">Gene fusion</option>
+                                              <option value="rearrangement">Rearrangement</option>
+                                              <option value="others">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <!--  突变描述板块  -->
+                          <tr>
+                            <td>
+                                <div class="part_search" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="500">
+                                    <div class="search_title"><img src="IMAGE/search_title1.svg"><h4>MUTATION DESCRIPTION</h4></div>
+                                    <div class="outside">
+                                        <div class="inside" style="height: 150px; overflow-y: hidden">
+                                             <!--<p>mutation-describe(**查询单个突变直接输入，查询多个突变用':'分隔，输入all查询所有突变）</p>-->
+                                                <!--<input id="mutation_describe" style="width: 100%;"name="mutation_describe" type="text" disabled placeholder="This parameter can be filled only in missense">-->
+                                              <div class="input-container">
+                                                <textarea id="mutation_describe" name="mutation_describe" placeholder="This parameter can be filled only in missense" type="text" disabled class="md_input" style="resize: none; width: 100%; margin: 0;padding: 0; background-color: white" rows="5" cols="103">This parameter can be filled only in the "Missense" type.</textarea>
+                                                <div class="underline"></div>
+                                              </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                          </tr>
+
+                          <!--  提交板块  -->
+                          <tr>
+                            <td width="90%">
+                              <div id="subbtn">
+                                 <button id="submit" type="submit" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="500"><span class="transition"></span><span class="gradient"></span><span class="label">Submit</span></button>
+                                 <button id="example" type="button" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="600"><span class="transition"></span><span class="gradient"></span><span class="label">Example</span></button>
+                                 <button id="reset_cus" type="button" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="700"><span class="transition"></span><span class="gradient"></span><span class="label">Reset</span></button>
+                              </div>
+                            </td>
+                          </tr>
+                          </table>
+                          </div>
+                          </form>
+                          </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        AOS.init({
+                            once: true,
+                        });
+                      function checkip(){
+                        debugger
+                        console.log("before")
+                        var dl=$("input[name='diseasetype']:checked").length;
+                        var gl=$("input[name='gene']:checked").length;
+                        var mt=$('#mt').val();
+                        var md=$('#mutation_describe').val();
+                        if(dl==0||gl==0){
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'select one disease and gene!',
+                            })
+
+                        return false;
+                      }else if(mt=="missense"){
+                        console.log(1)
+                        if(md==''){
+                          console.log(2)
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'mutation type is null!',
+                            })
+                         return false;
+                        
+                        }else{
+                          return true;
+                        }
+                      }else{
+                        return true;
+                      }
+                    
+                      }
+                     
+                    </script>
+                    
+                    <!-- footer  --> 
+                    <div class="row clearfix shift_down_foot">
+                        <div class="col-md-12 column" style="margin: 0; padding: 0;">
+                            <div class="foot">© College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, China.</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+ 
+    </body>
+</html>

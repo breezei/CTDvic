@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/ctdna_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: wyc
+    password: 112233
+
+
+  mvc:
+     view:
+       prefix: ./
+       suffix: .jsp
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: /src

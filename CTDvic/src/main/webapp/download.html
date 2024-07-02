@@ -1,0 +1,303 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="en" />
+    <meta name="author" content="CTDvic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>CTDvic</title>
+    <link rel="shortcut icon" href="IMAGE/c.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/pattern.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/pattern.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <!-- datatable插件  -->
+    <link href="datatable/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="datatable/buttons.bootstrap5.min.css" rel="stylesheet">
+    <link href="datatable/jquery.dataTables.min.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="datatable/buttons.bootstrap5.min.js"></script>
+    <script type="text/javascript" src="datatable/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="datatable/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="datatable/jszip.min.js"></script>
+    <script type="text/javascript" src="datatable/pdfmake.min.js"></script>
+    <script type="text/javascript" src="datatable/vfs_fonts.js"></script>
+    <script type="text/javascript" src="datatable/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="datatable/buttons.print.min.js"></script>
+    <!-- custom     -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/download.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <style>
+       .dropdown-menu, .dropdown-menu li a{
+font-family: "Gill Sans", sans-serif;
+background-color: #599a94;
+font-size: 1.3rem;
+color: #e8e8e8 ;
+font-weight: 600;
+}
+.dropdown-menu{
+border-color: #3E6C6F;
+border-width: 1px;
+-webkit-transition: all 0.5s ease-in;
+-moz-transition: all 0.5s ease-in;
+-ms-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.dropdown-menu a:hover{
+color: #3E6C6F !important;
+background-color: aliceblue !important;
+}
+.transp {
+background-color:transparent;
+transition: background-color 1.5s;
+}
+.notransp{
+background-image: url(IMAGE/non_index.svg);
+background-repeat: no-repeat;
+background-size: cover;
+transition: background-color 1.5s;
+}
+    </style>
+</head>
+
+<body style="margin: 0; overflow-x: hidden;">
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <!-- nav start  -->
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <nav class="navbar navbar-default navbar-fixed-top" style="background-image:url(IMAGE/non_index.svg);background-repeat: no-repeat;  background-size: cover;border-color:transparent;" id="navigation" role="navigation">
+                        <div style="width: 50%; height: 100px; position: absolute;"><a href="index.html"><img src="IMAGE/logo.svg" style="position:relative;width:50%;height:90%; display: inline-block;"></a></div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: transparent !important;">Search<strong class="caret"></strong></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="search_mo.html">Variant-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_ml.html">Function-orient(VL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_go.html">Gene-orient(GL)</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="search_fo_gl.html">Function-orient(GL)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="curation.html">Curation</a>
+                                </li>
+                                <li>
+                                    <a href="tools.html">Tools</a>
+                                </li>
+                                <li>
+                                    <a href="jbrowse.html">Genome Browser</a>
+                                </li>
+                                <li>
+                                    <a href="download.html" class="active">Download</a>
+                                </li>
+                                <li>
+                                    <a href="submitdata.html">Submit data</a>
+                                </li>
+                                <li>
+                                    <a href="helps.html">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Download_main-->
+            <div class="row clearfix shift_down">
+                <div class="col-md-12 column">
+                    <div id="content" class="box" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="box_head">
+                            <h4 class="pattern-diagonal-stripes-sm text-pattern" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">< Download dataset from CTDvic ></h4>
+                            <div class="pattern-diagonal-stripes-sm stripe" style="width: 100%;"></div>
+                            <a href="helps.html#help3_6"><img id="wenhao" src="IMAGE/wenhao.png"></a>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="col-md-2 column right-menu">
+                                    <div>
+                                        <button id="B1" class="animated-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                ></path>
+                                            </svg>
+                                            <span class="text">Bulk Data</span>
+                                            <span class="circle"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                        <button id="B2" class="animated-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                ></path>
+                                            </svg>
+                                            <span class="text">Raw Data</span>
+                                            <span class="circle"></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div ID="data" class="col-md-10 column hidden-div">
+                                    <div class="row clearfix" style="height: 500px;text-align: center">
+                                        <div class="col-md-4 column">
+                                            <div class="down-l">
+                                                <a href="download/variants.csv" download=""><img src="IMAGE/downl.png" class="animate__animated animate__pulse animate__infinite animate__delay-2s animate__slow"></a>
+                                            </div>
+                                            <div class="text-l">
+                                                <h2>VARIANT-LEVEL</h2>
+                                                <p>Manual curation of experimentally validated variants</p>
+                                                <p>723 kb</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 column">
+                                            <div class="down-c">
+                                                <a href="download/genes.csv" download=""><img src="IMAGE/downl1.png" class="animate__animated animate__pulse animate__infinite animate__delay-2s animate__slow"></a>
+                                            </div>
+                                            <div class="text-c">
+                                                <h2>GENE-LEVEL</h2>
+                                                <p>Manual curation of experimentally validated genes</p>
+                                                <p> 362 kb</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 column">
+                                            <div class="down-r">
+                                                <a href="download/curations.csv" download=""><img src="IMAGE/downl2.png" class="animate__animated animate__pulse animate__infinite animate__delay-2s animate__slow"></a>
+                                            </div>
+                                            <div class="text-r">
+                                                <h2>PREDICTION-LEVEL</h2>
+                                                <p>Tumor driver genes and hotspot mutations predicted by geMER in cfDNA mutation spectrums</p>
+                                                <p>3922 kb</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ID="rawdata" class="col-md-10 column">
+                                    <table id="download_raw" class="display" role="grid" aria-describedby="example_info" >
+                                        <thead>
+                                            <tr>
+                                                <th>Disease</th><th>Title</th><th>PMID</th><th>Patient information</th><th>Mutation spectrum</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr><td>Lung Cancer</td><td>Direct detection of early-stage cancers using circulating tumor DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28814544" target='_blank'>28814544</a></td><td><a href="" download=""></a></td><td><a href="raw_data/28814544_Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Lung Cancer</td><td>Resectable lung lesions malignancy assessment and cancer detection by ultra-deep sequencing of targeted gene mutations in plasma cell-free DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/30981987" target='_blank'>30981987</a></td><td><a href="" download=""></a></td><td><a href="raw_data/30981987_Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Circulating tumor DNA sequencing in colorectal cancer patients treated with first-line chemotherapy with anti-EGFR</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34381078" target='_blank'>34381078</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34381078_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Tissue-specific cell-free DNA degradation quantifies circulating tumor DNA burden</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/33850132" target='_blank'>33850132</a></td><td><a href="" download=""></a></td><td><a href="raw_data/33850132_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Clinicopathologic Characteristics of HER2-positive Metastatic Colorectal Cancer and Detection of HER2 in Plasma Circulating Tumor DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/31227437" target='_blank'>31227437</a></td><td><a href="" download=""></a></td><td><a href="raw_data/31227437_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Somatic mutation detection using various targeted detection assays in paired samples of circulating tumor DNA, primary tumor and metastases from patients undergoing resection of colorectal liver metastases</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28949453" target='_blank'>28949453</a></td><td><a href="" download=""></a></td><td><a href="raw_data/28949453_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Application of Circulating Tumor DNA as a Non-Invasive Tool for Monitoring the Progression of Colorectal Cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/27459628" target='_blank'>27459628</a></td><td><a href="" download=""></a></td><td><a href="raw_data/27459628_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Colorectal Cancer</td><td>Direct detection of early-stage cancers using circulating tumor DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28814544" target='_blank'>28814544</a></td><td><a href="patient_info/28814544_sur_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td><td><a href="raw_data/28814544_Colorectal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Prostate Cancer</td><td>BRCA2, ATM, and CDK12 Defects Differentially Shape Prostate Tumor Driver Genomics and Clinical Aggression</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/33414135" target='_blank'>33414135</a></td><td><a href="" download=""></a></td><td><a href="raw_data/33414135_Prostate Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Prostate Cancer</td><td>Identification of Hypermutation and Defective Mismatch Repair in ctDNA from Metastatic Prostate Cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/31744831" target='_blank'>31744831</a></td><td><a href="" download=""></a></td><td><a href="raw_data/31744831_Prostate Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Gliomas</td><td>Tracking tumour evolution in glioma through liquid biopsies of cerebrospinal fluid</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/30675060" target='_blank'>30675060</a></td><td><a href="" download=""></a></td><td><a href="raw_data/30675060_Gliomas.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Ovarian Cancer</td><td>Direct detection of early-stage cancers using circulating tumor DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28814544" target='_blank'>28814544</a></td><td><a href="" download=""></a></td><td><a href="raw_data/28814544_Ovarian Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Uveal Melanoma</td><td>Clinical and molecular response to tebentafusp in previously treated patients with metastatic uveal melanoma: a phase 2 trial</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/36229663" target='_blank'>36229663</a></td><td><a href="" download=""></a></td><td><a href="raw_data/36229663_Uveal Melanoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Melanoma</td><td>Clonal dynamics of circulating tumor DNA during immune checkpoint blockade therapy for melanoma</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34477284" target='_blank'>34477284</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34477284_Melanoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Hepatocellular Carcinoma</td><td>Identification and monitoring of mutations in circulating cell-free tumor DNA in hepatocellular carcinoma treated with lenvatinib</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34174931" target='_blank'>34174931</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34174931_Hepatocellular Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Hepatocellular Carcinoma</td><td>Comprehensive Liquid Profiling of Circulating Tumor DNA and Protein Biomarkers in Long-Term Follow-Up Patients with Hepatocellular Carcinoma</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/31217202" target='_blank'>31217202</a></td><td><a href="" download=""></a></td><td><a href="raw_data/31217202_Hepatocellular Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Hepatocellular Carcinoma</td><td>Genetic profiling using plasma-derived cell-free DNA in therapy-naïve hepatocellular carcinoma patients: a pilot study</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/29509837" target='_blank'>29509837</a></td><td><a href="" download=""></a></td><td><a href="raw_data/29509837_Hepatocellular Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Gastric Cancer</td><td>Circulating tumor DNA analyses predict progressive disease and indicate trastuzumab-resistant mechanism in advanced gastric cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/31031019" target='_blank'>31031019</a></td><td><a href="" download=""></a></td><td><a href="raw_data/31031019_Gastric Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Esophageal Cancer</td><td>Circulating Tumor DNA Analysis for Detection of Minimal Residual Disease After Chemoradiotherapy for Localized Esophageal Cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/31711920" target='_blank'>31711920</a></td><td><a href="" download=""></a></td><td><a href="raw_data/31711920_Esophageal Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Esophageal Squamous Cell Carcinoma</td><td>Plasma Circulating Tumor DNA Sequencing Predicts Minimal Residual Disease in Resectable Esophageal Squamous Cell Carcinoma</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34094900" target='_blank'>34094900</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34094900_Esophageal Squamous Cell Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Esophageal Adenocarcinoma</td><td>Potential Clinical Utility of a Targeted Circulating Tumor DNA Assay in Esophageal Adenocarcinoma</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/35737908" target='_blank'>35737908</a></td><td><a href="patient_info/35737908_sur_Esophageal Adenocarcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td><td><a href="raw_data/35737908_Esophageal Adenocarcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Cholangiocarcinoma</td><td>Cell-free DNA captures tumor heterogeneity and driver alterations in rapid autopsies with pre-treated metastatic cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34045463" target='_blank'>34045463</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34045463_Cholangiocarcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Pancreatic Cancer</td><td>Tumor-Informed Approach Improved ctDNA Detection Rate in Resected Pancreatic Cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/36232820" target='_blank'>36232820</a></td><td><a href="" download=""></a></td><td><a href="raw_data/36232820_Pancreatic Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Bladder Cancer</td><td>Plasma ctDNA is a tumor tissue surrogate and enables clinical-genomic stratification of metastatic bladder cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/33420073" target='_blank'>33420073</a></td><td><a href="" download=""></a></td><td><a href="raw_data/33420073_Bladder Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Renal Cell Carcinoma</td><td>Plasma Circulating Tumor DNA and Clonal Hematopoiesis in Metastatic Renal Cell Carcinoma</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/32046920" target='_blank'>32046920</a></td><td><a href="" download=""></a></td><td><a href="raw_data/32046920_Renal Cell Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Classical Hodgkin Lymphoma</td><td>Circulating tumor DNA predicts response in Chinese patients with relapsed or refractory classical hodgkin lymphoma treated with sintilimab</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/32304999" target='_blank'>32304999</a></td><td><a href="patient_info/32304999_sur_Classical Hodgkin Lymphoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td><td><a href="raw_data/32304999_Classical Hodgkin Lymphoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Diffuse Large B-Cell Lymphoma</td><td>Mutational Landscape and Tumor Burden Assessed by Cell-free DNA in Diffuse Large B-Cell Lymphoma in a Population-Based Study</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/33122345" target='_blank'>33122345</a></td><td><a href="" download=""></a></td><td><a href="raw_data/33122345_Diffuse Large B-Cell Lymphoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Gynecologic Cancers</td><td>Personalized Circulating Tumor DNA Biomarkers Dynamically Predict Treatment Response and Survival In Gynecologic Cancers</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/26717006" target='_blank'>26717006</a></td><td><a href="" download=""></a></td><td><a href="raw_data/26717006_Gynecologic Cancers.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Breast Cancer</td><td>Neratinib Efficacy and Circulating Tumor DNA Detection of HER2 Mutations in HER2 Nonamplified Metastatic Breast Cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28679771" target='_blank'>28679771</a></td><td><a href="" download=""></a></td><td><a href="raw_data/28679771_Breast Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Breast Cancer</td><td>Direct detection of early-stage cancers using circulating tumor DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/28814544" target='_blank'>28814544</a></td><td><a href="" download=""></a></td><td><a href="raw_data/28814544_Breast Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Breast Cancer</td><td>Genomic profile of advanced breast cancer in circulating tumour DNA</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/33893289" target='_blank'>33893289</a></td><td><a href="" download=""></a></td><td><a href="raw_data/33893289_Breast Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Breast Cancer</td><td>Cell-free DNA captures tumor heterogeneity and driver alterations in rapid autopsies with pre-treated metastatic cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34045463" target='_blank'>34045463</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34045463_Breast Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Breast Cancer</td><td>Baseline Mutations and ctDNA Dynamics as Prognostic and Predictive Factors in ER-Positive/HER2-Negative Metastatic Breast Cancer Patients</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/37490393" target='_blank'>37490393</a></td><td><a href="" download=""></a></td><td><a href="raw_data/37490393_Breast Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Non-Small Cell Lung Cancer</td><td>Cell-free DNA captures tumor heterogeneity and driver alterations in rapid autopsies with pre-treated metastatic cancer</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34045463" target='_blank'>34045463</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34045463_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Non-Small Cell Lung Cancer</td><td>Integrating genomic features for non-invasive early lung cancer detection</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/32269342" target='_blank'>32269342</a></td><td><a href="" download=""></a></td><td><a href="raw_data/32269342_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Non-Small Cell Lung Cancer</td><td>Outcomes in oncogenic-addicted advanced NSCLC patients with actionable mutations identified by liquid biopsy genomic profiling using a tagged amplicon-based NGS assay</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/32525942" target='_blank'>32525942</a></td><td><a href="" download=""></a></td><td><a href="raw_data/32525942_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Non-Small Cell Lung Cancer</td><td>Dynamic recurrence risk and adjuvant chemotherapy benefit prediction by ctDNA in resected NSCLC</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34799585" target='_blank'>34799585</a></td><td><a href="patient_info/34799585_sur_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td><td><a href="raw_data/34799585_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Non-Small Cell Lung Cancer</td><td>RB1 aberrations predict outcomes of immune checkpoint inhibitor combination therapy in NSCLC</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/37441425" target='_blank'>37441425</a></td><td><a href="patient_info/37441425_sur_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td><td><a href="raw_data/37441425_Non-Small Cell Lung Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Metastatic Papillary Thyroid Cancer</td><td>Genomic landscape of metastatic papillary thyroid carcinoma and novel biomarkers for predicting distant metastasis</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/32187423" target='_blank'>32187423</a></td><td><a href="" download=""></a></td><td><a href="raw_data/32187423_Metastatic Papillary Thyroid Cancer.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        <tr><td>Hepatocellular Carcinoma</td><td>Personalized neoantigen vaccine prevents postoperative recurrence in hepatocellular carcinoma patients with vascular invasion</td><td><a href="http://www.ncbi.nlm.nih.gov/pubmed/34903219" target='_blank'>34903219</a></td><td><a href="" download=""></a></td><td><a href="raw_data/34903219_Hepatocellular Carcinoma.txt" download=""><img class="download_s" src="IMAGE/download_s.png"></a></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                    AOS.init({
+                    once:true,
+                    })
+
+                    $(document).ready(function() {
+                        $('#download_raw').dataTable({
+                            'autoWidth': false,
+                            "pageLength": -1,
+                            sortable: false,
+                            "scrollY":"350px",     //垂直滚动条
+                            dom: 'frti'
+
+                        });
+                        //切换显示备注信息，显示部分或者全部
+
+                    });
+                    $('#B1').on('click', function() {
+                        // 切换样式类
+                        $('#rawdata').css("display","none");
+                        $('#data').css("display","block");
+                    });
+                    $('#B2').on('click', function() {
+                        // 切换样式类
+                        $('#data').css("display","none");
+                        $('#rawdata').css("display","block");
+                    });
+            </script>
+            <!-- footer  -->
+            <div class="row clearfix shift_down_foot">
+                <div class="col-md-12 column" style="margin: 0; padding: 0;">
+                    <div class="foot">© College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, China.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
